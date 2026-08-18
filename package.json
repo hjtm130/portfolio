@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "npm run fetch-media && vite",
+    "fetch-media": "node scripts/fetch-media-thumbnails.mjs",
+    "build": "npm run fetch-media && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
