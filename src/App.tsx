@@ -10,7 +10,6 @@ import EngineeringSection from "./components/EngineeringSection"
 import GlobalSection from "./components/GlobalSection"
 import MediaSection from "./components/MediaSection"
 
-import Timeline from "./components/Timeline"
 import Footer from "./components/Footer"
 
 export default function App() {
