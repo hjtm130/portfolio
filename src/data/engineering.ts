@@ -41,12 +41,12 @@ export const engineeringProjects: Project[] = [
       "Vite",
     ],
     images: [
-      "/images/projects/portfolio.jpg",
+      "/src/images/projects/portfolio.png",
     ],
     links: [
       {
         label: "Live Demo",
-        url: "https://example.vercel.app",
+        url: "https://portfolio-hjtm131.vercel.app/",
       },
       {
         label: "GitHub",
@@ -68,7 +68,7 @@ export const engineeringProjects: Project[] = [
       "Azure",
     ],
     images: [
-      "src/images/projects/sscss.png",
+      "/src/images/projects/sscss.png",
     ],
     links: [
       {
@@ -92,9 +92,9 @@ export const engineeringProjects: Project[] = [
       "C#",
     ],
     images: [
-      "src/images/projects/kosen_game1.png",
-      "src/images/projects/kosen_game2.png",
-      "src/images/projects/kosen_game3.png",
+      "/src/images/projects/kosen_game1.png",
+      "/src/images/projects/kosen_game2.png",
+      "/src/images/projects/kosen_game3.png",
     ],
     download: {
       label: "Download",
