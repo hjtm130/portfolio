@@ -41,7 +41,7 @@ export const engineeringProjects: Project[] = [
       "Vite",
     ],
     images: [
-      "/src/images/projects/portfolio.png",
+      "/images/projects/portfolio.png",
     ],
     links: [
       {
@@ -68,7 +68,7 @@ export const engineeringProjects: Project[] = [
       "Azure",
     ],
     images: [
-      "/src/images/projects/sscss.png",
+      "/images/projects/sscss.png",
     ],
     links: [
       {
@@ -92,9 +92,9 @@ export const engineeringProjects: Project[] = [
       "C#",
     ],
     images: [
-      "/src/images/projects/kosen_game1.png",
-      "/src/images/projects/kosen_game2.png",
-      "/src/images/projects/kosen_game3.png",
+      "/images/projects/kosen_game1.png",
+      "/images/projects/kosen_game2.png",
+      "/images/projects/kosen_game3.png",
     ],
     download: {
       label: "Download",
