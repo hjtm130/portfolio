@@ -108,6 +108,34 @@ export const engineeringProjects: Project[] = [
     ],
   },
   {
+    year: 2024,
+    title: "RollingStockManager",
+    category: "Web Application",
+    description:
+      "災害用備蓄の管理を支援するWebアプリケーション。ユーザー認証、アイテム管理、画像アップロード、使用期限・保管場所・数量の管理などを実装",
+    tech: [
+      "Python",
+      "Flask",
+      "SQLAlchemy",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "JWT",
+    ],
+    images: [
+      "/images/projects/RollingStockManager01.jpg",
+      "/images/projects/RollingStockManager02.jpg",
+      "/images/projects/RollingStockManager03.jpg",
+      "/images/projects/RollingStockManager04.jpg",
+    ],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/raptech-jp/RollingStockManager",
+      },
+    ],
+  },
+  {
     title: "Game Project",
     category: "Game",
     year: 2023,
