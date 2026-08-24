@@ -30,9 +30,35 @@ export const engineeringAwards: Award[] = [
 
 export const engineeringProjects: Project[] = [
   {
+    year: 2026,
+    title: "Audit MAX",
+    category: "Web / Full Stack",
+    description:
+      "航空業界の監査業務を支援するWebアプリケーション。",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+    ],
+    images: [
+      "/images/projects/korvapuusti.png",
+    ],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/Tew12345678910/KORVAPUUSTI-Junction",
+      },
+      {
+        label: "Project Documentation",
+        url: "/documents/korvapuusti-junction.pdf",
+      },
+    ],
+  },
+  {
+    year: 2026,
     title: "Portfolio",
     category: "Web",
-    year: 2026,
     description:
       "React / TypeScriptを利用した個人Webサイト",
     tech: [

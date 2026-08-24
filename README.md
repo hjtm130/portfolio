@@ -1,32 +1,150 @@
-# React + TypeScript + Vite
+# Personal Portfolio / Career Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal portfolio and career profile website.
 
-Currently, two official plugins are available:
+Rather than focusing only on finished products, this website presents my activities and experiences across research, business, engineering, global experiences, and media.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+This website is designed to give a concise overview of who I am, what I have worked on, and what I am interested in.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Research
+- Research activities
+- Academic conference presentations
+- Research topics and achievements
 
-## Expanding the Oxlint configuration
+### Business
+- Business competitions
+- Hackathons
+- Awards and recognitions
+- Projects and ideas
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Engineering
+- Software and game development
+- Web development
+- AI / machine learning projects
+- Other technical achievements
 
-```json
+### Global
+- Study abroad experience
+- International activities
+- Tutoring and cross-cultural experiences
+
+### Media
+- TV appearances
+- Interviews
+- Articles and other media coverage
+
+## Features
+
+- Responsive design
+- Data-driven content management
+- Project cards with images
+- Multiple images per project
+- External links for achievements and media
+- Direct download links for completed games
+- Automatically generated media thumbnails
+- Mobile-friendly layout
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- CSS
+- Vercel
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── AboutSection.tsx
+│   ├── ResearchSection.tsx
+│   ├── BusinessSection.tsx
+│   ├── EngineeringSection.tsx
+│   ├── GlobalSection.tsx
+│   └── MediaSection.tsx
+│
+├── data/
+│   ├── profile.ts
+│   ├── research.ts
+│   ├── business.ts
+│   ├── engineering.ts
+│   ├── global.ts
+│   └── media.ts
+│
+└── ...
+
+scripts/
+└── fetch-media-thumbnails.mjs
+
+public/
+├── games/
+└── generated-media/
+```
+### Data-Driven Design
+
+Most of the content is separated from the UI.
+
+Adding or updating an achievement, project, conference presentation, media appearance, or global experience can be done by editing the corresponding data files rather than modifying the components themselves.
+
+For example:
+```
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
+  year: "2026",
+  title: "Project Title",
+  description: "Project description",
+  links: [
+    {
+      label: "Details",
+      url: "https://example.com"
+    }
+  ]
 }
 ```
+This allows the website to grow as my activities and projects increase.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Media Thumbnails
+
+Media thumbnails are automatically retrieved from the URLs registered in src/data/media.ts.
+
+Running:
+
+npm run fetch-media
+
+fetches available OGP images and generates:
+
+public/generated-media/
+└── manifest.json
+
+The production build also performs this step automatically.
+
+Development
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Fetch media thumbnails manually:
+
+npm run fetch-media
+
+Build for production:
+
+npm run build
+Live Demo
+
+View Portfolio
+
+Purpose
+
+This website serves as a central place to present my background, achievements, research, projects, and activities.
+
+It is intended for people who want to learn more about my work beyond a traditional resume or business card.
+
+Built with React + TypeScript + Vite.
