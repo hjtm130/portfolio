@@ -2,6 +2,14 @@ import type { Media } from "./types"
 
 export const media: Media[] = [
   {
+    year: 2026,
+    type: "Web",
+    title: "ものづくりの楽しさを、社会に届く価値へ変えていく",
+    publisher: "文部科学省",
+    description: "アントレプレナーシップ教育の効果と今後の学びに関するインタビュー記事",
+    url: "https://entrepreneurship-education.mext.go.jp/my-entrepreneur/ito1/",
+  },
+  {
     year: 2025,
     type: "TV",
     title: "DCON2025特別番組への出演",
